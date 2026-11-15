@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /panier.html
 
-Sitemap: https://www.pharmacie-grande-armee-marseille.fr/sitemap.xml
+Sitemap: https://www.grande-armee.com/sitemap.xml

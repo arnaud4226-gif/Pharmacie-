@@ -45,9 +45,17 @@ Tant que ce champ est vide, le formulaire ouvre la messagerie du client avec la 
 **Option simple : GitHub Pages**
 Settings → Pages → « Deploy from a branch » → choisir la branche et le dossier `/ (root)`. Le site est en ligne en quelques minutes à une adresse du type `xxx.github.io`.
 
-**Nom de domaine**
-Acheter un domaine (OVH, Gandi… environ 10 €/an), par exemple `pharmacie-grande-armee-marseille.fr`, et le relier à l'hébergement.
-Le site utilise pour l'instant l'adresse `https://www.pharmacie-grande-armee-marseille.fr/` dans les balises pour Google (`index.html`, `robots.txt`, `sitemap.xml`, et `canonical` de chaque page). **Si le domaine choisi est différent, remplacer cette adresse partout** (une recherche/remplacement suffit).
+**Nom de domaine : grande-armee.com**
+Le site est configuré pour `https://www.grande-armee.com/` (balises Google, `sitemap.xml`, `robots.txt`). Le fichier `CNAME` indique ce domaine à GitHub Pages.
+
+Pour brancher le domaine, il faut aller chez le registrar où il a été acheté (OVH, Gandi, IONOS… : c'est là que se gère aussi l'adresse pharmacie@grande-armee.com), rubrique « Zone DNS », et :
+
+1. **Ne pas toucher aux lignes `MX`** (et `TXT` SPF/DKIM) : ce sont elles qui font fonctionner les e-mails. Les modifier couperait la messagerie.
+2. Ajouter ou modifier un enregistrement `CNAME` : `www` → `<votre-compte>.github.io.`
+3. Pour que `grande-armee.com` sans « www » fonctionne aussi, remplacer les enregistrements `A` de la racine (`@`) par les quatre adresses de GitHub Pages : `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+4. Dans GitHub : Settings → Pages → Custom domain = `www.grande-armee.com`, puis cocher « Enforce HTTPS » (disponible quelques heures après).
+
+Si un ancien site existe déjà sur ce domaine, le noter avant de changer quoi que ce soit : ses adresses de pages peuvent être référencées sur Google, et il vaut mieux prévoir des redirections.
 
 ## Être trouvé sur Google
 
