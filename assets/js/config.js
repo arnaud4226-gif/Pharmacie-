@@ -9,7 +9,7 @@ window.PHARMACIE = {
   ville: "Marseille",
   telephone: "04 91 62 36 31",          // À VÉRIFIER (trouvé dans des annuaires en ligne)
   telephoneIntl: "+33491623631",
-  email: "contact@pharmacie-grande-armee.fr", // À COMPLÉTER : adresse qui recevra les réservations
+  email: "pharmacie@grande-armee.com",   // adresse figurant sur la plaquette PDA
 
   // Horaires (affichés en vitrine). 0 = dimanche … 6 = samedi. Format "HH:MM".
   horaires: {
