@@ -1,0 +1,12 @@
+{
+  "name": "Pharmacie de la Grande Armée",
+  "short_name": "Pharmacie GA",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#3a9d2f",
+  "icons": [
+    { "src": "assets/img/icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
